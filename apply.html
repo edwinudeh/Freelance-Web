@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Apply page</title>
+</head>
+<body>
+
+  <div class="form-header">
+    <h2>Apply for job</h2>
+    <div class="cancel-button">
+      <a href="freelance.html"><img src="images/cancel-button-png-favpng-d8VvVgmnG8XwYuUsCMB7zDBkh.jpg" alt="cancel-button"></a>
+    </div>
+
+    <p id="jobDescription"></p>
+
+  </div>
+  
+  <section>
+    <form id="applyForm">
+      <input type="text" name="name" id="name" placeholder="Your Name" required>
+      <input type="email" name="email" id="email" placeholder="Your Email" required>
+      <textarea name="coverLetter" id="coverLetter" placeholder="Cover Letter" required></textarea>
+      <button type="submit">Apply</button>
+
+
+    </form>
+  </section>
+
+ <script src="script.js"></script>
+
+    <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const title = localStorage.getItem('jobTitle');
+    const description = localStorage.getItem('jobDescription');
+    const budget = localStorage.getItem('jobBudget');
+
+    if (title && description && budget) {
+      document.querySelector('h2').innerText = `Apply for: ${title}`;
+      document.getElementById('jobDescription').innerHTML = `
+        <strong>Description:</strong> ${description}<br>
+        <strong>Budget:</strong> ${budget}
+      `;
+    }
+  });
+</script>
+
+</body>
+</html>

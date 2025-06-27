@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreelancerConnect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <h1>FreelancerConnect</h1>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Browse Projects</a>
+      <a href="#post">Post a Project</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h2>Find the perfect Freelance services for your business</h2>
+      <p>Connect with talented freelancers worldwide. Post jobs, and grow your business with confidence.</p>
+    </section>
+
+    <section id="home-image" class="hero-image">
+      <!-- <img src="images/photo-1598257006626-48b0c252070d.avif" alt="Freelancer Image"> -->
+    </section>
+    
+    <a href="#projects">
+      <button class="head-1">
+        <img src="images/images (2).png" alt="Search Freelance"> Find freelancers
+      </button>
+    </a>
+    <a href="#post">
+      <button class="head-2"> < > Post a job</button>
+    </a>
+
+    <section class="projects" id="projects">
+      <h3>Available Projects</h3>
+      <div id="project-list"></div>
+    </section>
+
+    <section id="post">
+      <h3>Post a Project</h3>
+      <form id="postProjectForm">
+        <input type="text" name="title" id="title" placeholder="Project Title" required>
+        <textarea name="description" id="description" placeholder="Project Description" required></textarea>
+        <input type="text" name="budget" id="budget" placeholder="Budget (e.g., $500)" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="login">
+      <h3>Login</h3>
+      <form id="loginForm" method="POST">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-head-1">
+      <h2>FreelancerConnect</h2>
+      <p>Connecting talented freelancers with amazing opportunities worldwide.</p>
+    </div>
+
+    <div class="footer-head-2">
+      <h2>For Clients</h2>
+      <p>How to Hire</p>
+      <p>Talent Marketplace</p>
+      <p>Project Catalog</p>
+      <p>Enterprise</p>
+    </div>
+
+    <div class="footer-head-3">
+      <h2>Company</h2>
+      <p>About Us</p>
+      <p>Leadership</p>
+      <p>Careers</p>
+      <p>Press</p>
+    </div>
+
+    <p>&copy; 2025 FreelancerConnect. All rights reserved.</p>
+
+    <div class="row">
+      <div class="col">
+        <a href="#">Privacy</a>
+        <a href="#">Policy</a>
+      </div>
+      <div class="col">
+        <a href="#">Terms</a>
+        <a href="#">Conditions</a>
+      </div>
+      <div class="col">
+        <a href="#">Cookie</a>
+        <a href="#">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
