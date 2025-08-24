@@ -1,1 +1,2 @@
 # Freelance-Web
+This is a free job marketplace website where freelancers can find work and clients can post jobs. The platform is designed to make it simple, fast, and accessible for anyone looking to hire talent or offer freelance services.
